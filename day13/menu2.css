@@ -1,0 +1,23 @@
+/*.nav {
+    position: relative;
+    display: inline-block;
+}*/
+
+button {
+    background-color: grey;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    width: 160px;
+}
+
+button#departments:hover .links{
+    display: block;
+}

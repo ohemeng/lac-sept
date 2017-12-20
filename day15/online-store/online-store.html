@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online-store</title>
+		<link rel="stylesheet" type="text/css" href="online-store.css">
+</head>
+<body>
+
+<h1>Online Store</h1>
+
+<div class="row">
+	First Name: <input type="text" name="firstname" id="firstname">
+</div>
+
+<div class="row">
+	Last Name: <input type="text" name="lastname" id="lastname">
+</div>
+
+<div class="row">
+	Address: <input type="text" name="address" id="address">
+</div>
+
+<div class="row">
+	Pants:<br>
+	<SELECT id="size">
+		<option>small</option>
+		<option>medium</option>
+		<option>large</option>
+	</SELECT>
+</div>
+
+<div class="row">
+	Color:<br>
+	<SELECT id="color">
+		<option>black</option>
+		<option>blue</option>
+		<option>white</option>
+	</SELECT>
+</div>
+
+<div>
+	UPS: <input type="radio" name="shipping"><br>
+	FedEx: <input type="radio" name="shipping"><br>
+	USPS: <input type="radio" name="shipping"><br>
+</div>
+
+<div>
+Price: $45
+</div>
+
+<div>
+	<button id="submit">Submit</button>
+</div>
+
+<div class="modal-wrapper">
+	<div class="modal">
+			<button class="btn js-modal-close">X</button>
+		<div class="modal-content">
+			<h3>Reciept</h3>
+			<div>
+				<span id="userInfo"></span>
+			</div>
+				<p>Thank you for your order. Expect delivery in 2 - 3 days by UPS.</p>
+			<button class="js-modal-close">Close</button>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="online-store.js"></script>
+</body>
+</html>

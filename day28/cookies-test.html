@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookies Test</title>
+</head>
+<body>
+	<h1>Usings javascript cookies api (Test)</h1>
+
+<span id="user"></span>
+
+<div>
+<label>Username:</label>
+<input type="text" name="username" class="username">
+</div>
+
+<div>
+<label>Password:</label>
+<input type="password" name="password">
+</div>
+
+<div>
+<button id="btn">Sign In</button><button id="btn2">Logout</button>
+</div>
+
+<a href="anotherpage2.html">Another Page</a>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<script type="text/javascript">
+	$("#btn").click(function(){
+		// Cookies.remove('userPie');
+		var username = $('.username').val();
+		console.log(username);
+		Cookies.set('userPie1', username)
+		var user = Cookies.get('userPie1');
+		$('#user').html('Yo, '+ user);
+	})
+</script>
+</body>
+</html>

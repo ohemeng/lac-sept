@@ -1,0 +1,8 @@
+body{
+	background: url("sky.png");
+}
+
+#spaceship{
+	position: relative;
+	width: 200px;
+}

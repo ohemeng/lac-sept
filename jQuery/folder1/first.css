@@ -1,0 +1,41 @@
+body{
+	width: 80%;
+	margin: 0 auto;
+}
+#lorem{
+	width: 95%;
+	height: 200px;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+	background-color: #dddddd;
+	padding: 20px;
+}
+
+#box{
+	position: absolute;
+	left: -350px;
+	width: 200px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+	background-color: red;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+nav{
+	width:100%;
+	background-color: black;
+	color: white;
+}
+li{
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px;
+}
+li:hover{
+	background-color: orange;
+}

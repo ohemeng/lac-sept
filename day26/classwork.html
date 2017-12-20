@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel using bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body class="bg-warning">
+
+<!--
+Instructions:
+1) Animate at 1s.
+2) Add captions
+3) Add indicators
+4) Carousel at 50% width
+5) Carousel centered
+6) Include Navbar
+
+-->
+
+<!-- Navbar starts here -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand text-light" href="#">LCS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Technology</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Students
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Sonal</a>
+          <a class="dropdown-item" href="#">Jeremy</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Nisa</a>
+          <a class="dropdown-item" href="#">Francisco</a>
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Carousel Starts Here -->
+
+<div id="carouselExampleIndicators" class="carousel slide mx-auto w-50" data-ride="carousel" data-interval="500">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" "></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
+  	<li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img class="d-block w-100 " src="1.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-md-block ">
+    		<h3>Welcome to The LSC Coding Class</h3>
+    		<p>Have Fun!!!</p>
+  		</div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="2.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+    		<h3>Welcome to The LSC Coding Class</h3>
+    		<p>Have More Fun!!!</p>
+  		</div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="3.jpg" alt="Third slide">
+       <div class="carousel-caption d-none d-md-block">
+    		<h3>Welcome to The LSC Coding Class</h3>
+    		<p>Have More More Fun!!!</p>
+  		</div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="4.jpg" alt="Fourth slide">
+    	<div class="carousel-caption d-none d-md-block">
+    		<h3>Welcome to The LSC Coding Class</h3>
+    		<p>Have More More More Fun!!!</p>
+  		</div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div> <!-- my div -->
+
+
+<div class="card mx-auto w-50" >
+  <div class="card-body">
+    <h4 class="card-title">Visit New York</h4>
+    <p class="card-text">Please visit New York on your vacation and have some fun.  If interested in coding, please checkout New York Code+Design Academy</p>
+    <a href="#" class="btn btn-info">Visit Us</a>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

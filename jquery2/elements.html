@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LSC Car Dealership</title>
+	<link rel="stylesheet" type="text/css" href="elements.css">
+</head>
+<body>
+	<div class="container">
+
+<h1>LSC Car Dealership</h1>
+	<h2>Describe the car you are looking for?</h2>
+	Name: <input type="text" name="name" id="name" placeholder="Enter your name" ><br>
+	Select a car:
+		<select id="car">
+			<option>Audi</option>
+			<option>BMW</option>
+			<option>Honda</option>
+			<option>Hyundai</option>
+			<option>Mercedes</option>
+			<option>Toyota</option>
+		</select>
+		<div>
+			Color: 
+			black: <input type="radio" name="color" id="black">
+			white: <input type="radio" name="color" id="white">
+			silver: <input type="radio" name="color" id="silver">
+		</div>
+		<div>
+		4 doors: <input type="radio" name="doors" id="four">
+		2 doors: <input type="radio" name="doors" id="two">
+		</div>
+		<div>
+			GPS: <input type="checkbox" name="gps" id="gps">
+		</div>
+		<div>
+			Here is the description of your car:<br>
+			<span id="description"> </span>
+		</div>
+
+		<div>
+			<button id="btn">Submit Form</button>
+		</div>
+
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script type="text/javascript" src="elements.js"></script>
+</body>
+</html>

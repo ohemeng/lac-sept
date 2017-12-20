@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online-store</title>
+		<link rel="stylesheet" type="text/css" href="health.css">
+</head>
+<body>
+
+<h1>Review Your Food Content</h1>
+
+<div class="row">
+	First Name: <input type="text" name="firstname" id="firstname">
+</div>
+
+<div class="row">
+	Last Name: <input type="text" name="lastname" id="lastname">
+</div>
+
+<div class="row">
+	Address: <input type="text" name="address" id="address">
+</div>
+
+<div class="row">
+	Bagel:<br>
+	<SELECT id="bagel">
+		<option value="one">1 bagel</option>
+		<option value="two">2 bagels</option>
+		<option value="three">3 bagels</option>
+	</SELECT>
+</div>
+
+<div class="row">
+	Milk:<br>
+	<SELECT id="milk">
+		<option value="1">1 glass</option>
+		<option value="2">2 glasses</option>
+		<option value="3">3 glasses</option>
+	</SELECT>
+</div>
+
+<div>
+	Spread:<br>
+	<SELECT id="spread">
+		<option>butter</option>
+		<option>jam</option>
+		<option>cream cheese</option>
+	</SELECT>
+</div>
+
+
+
+<div>
+	<button id="submit">Submit</button>
+</div>
+
+<div class="modal-wrapper">
+	<div class="modal">
+			<button class="btn js-modal-close">X</button>
+		<div class="modal-content">
+			<h3>Result</h3>
+			<div>
+				<span id="userInfo"></span>
+			</div>
+				<p>Here is your evaluation. Start eating healthy.</p>
+				<div>
+					<span id="total"></span>
+				</div>
+			<button class="js-modal-close">Close</button>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="health.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#box{
+	width: 200px;
+	height: 200px;
+	background-color: #ff0000;
+}
+
+#circle{
+	width: 200px;
+	height: 200px;
+	background-color: #00ff00;
+	border-radius: 100%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Restaurant</title>
+<link rel="stylesheet" type="text/css" href="pizza.css">
+</head>
+<body>
+<h1>Order Pizza Online</h1>
+
+<h2>Select Pizza Size:</h2>
+<div id="size">
+Name: <input type="text" name="firstname"><br>
+<br>
+Large ($13.99): <input type="radio" name="size" id="large">
+
+Medium ($11.99): <input type="radio" name="size" id="medium">
+
+Small ($9.99): <input type="radio" name="size" id="small">
+</div>
+
+<div id="toppings">
+<h2>Select Toppings</h2>
+Pepperoni ($1.99): <input type="checkbox" name="toppings" id="pepperoni">
+
+Sausage ($1.99): <input type="checkbox" id="sausage" name="toppings">
+
+Mushroom ($1.99): <input type="checkbox" id="mushroom" name="toppings">
+</div>
+<div>
+	<select>
+		<option>Diet Coke</option>
+		<option>Pepsi</option>
+	</select>
+</div>
+<div>
+<button id="btn">Submit</button>
+</div>
+<div>
+Here is your receipt:<br>
+<span id="receiptSize"></span>
+<span id="receiptTopping"></span>
+<span id="receiptTotal"></span>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="pizza.js"></script>
+</body>
+</html>

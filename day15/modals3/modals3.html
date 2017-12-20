@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modals - 3</title>
+		<link rel="stylesheet" type="text/css" href="modals3.css">
+</head>
+<body>
+<h1>Request Transcript</h1>
+<div class="row">
+	First Name: <input type="text" name="firstname" id="firstname">
+</div>
+<div class="row">
+	Last Name: <input type="text" name="lastname" id="lastname">
+</div>
+<div class="row">
+	Address: <input type="text" name="address" id="address">
+</div>
+<div class="row">
+	Major: <input type="text" name="major" id="major">
+</div>
+<div class="row">
+	Degree Recieved: <input type="text" name="degree" id="degree">
+</div>
+<div class="row">
+	Year of Completion: <input type="text" name="year" id="year">
+</div>
+
+<button id="submit">Submit</button>
+
+<div class="modal-wrapper">
+	<div class="modal">
+		<header class="modal-header">
+			<button class="btn js-modal-close">X</button>
+		</header>
+		<div class="modal-content">
+			<h3>Thank You</h3>
+			<div>
+				<span id="userInfo"></span>
+			</div>
+			<p>Your request for your transcript submitted. Expect to receive it in 7 - 10 business days.</p>
+			<button class="js-modal-close">Close</button>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="modals3.js"></script>
+</body>
+</html>

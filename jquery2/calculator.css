@@ -1,0 +1,15 @@
+.container{
+	width: 80%;
+	background-color: #eeeeee;
+	margin: 0 auto;
+	font-size: 32px;
+	border: 2px groove black;
+}
+
+input{
+	font-size: 32px;
+}
+
+span{
+	text-decoration: underline;
+}

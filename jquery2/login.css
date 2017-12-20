@@ -1,0 +1,35 @@
+
+.container{
+	width: 40%;
+	margin: 0 auto;
+	background-color: skyblue;
+	border-radius: 20px;
+}
+h1, p{
+	text-align: center;
+}
+label{
+	width: 30%;
+	padding-left: 10%;
+}
+
+.row{
+	margin-top: 20px;
+}
+input{
+	position: absolute;
+	left:  42%;
+	width: 20%;
+}
+
+button{
+	width: 50%;
+	height: 20%;
+}
+
+.buttons{
+	width: 30%;
+	margin: 0 auto;
+	padding: 10%;
+}
+

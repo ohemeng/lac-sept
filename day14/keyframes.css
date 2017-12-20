@@ -1,0 +1,19 @@
+.box{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	animation: move1 1s infinite;
+}
+
+@keyframes move1{
+	0%{
+		left: 40px;
+	}
+	50%{
+		top: 200px;
+	}
+	100%{
+		top: -100px;
+	}
+}

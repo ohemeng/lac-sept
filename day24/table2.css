@@ -1,0 +1,29 @@
+
+table, td, th{
+	border-collapse: collapse;
+	border: 1px solid #dddddd;
+	text-align: left;
+	font-family: arial;
+	font-size: 10px;
+}
+
+th{
+	background-color: #ff0000;
+	color: white;
+	width: 10%;
+}
+tr{
+	line-height: 3;
+}
+tr:nth-child(even) {
+		background-color: #f2f2f2;
+}
+
+tr:hover{
+	background-color: #ededed;
+}
+
+.btn{
+	background-color: red;
+	color: white;
+}

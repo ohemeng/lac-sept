@@ -1,0 +1,48 @@
+body{
+	font-size: 17px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+h1{
+	color: red;
+	font-family: Georgia;
+	text-align: center;
+}
+
+h3{
+	font-family: Georgia;
+	text-align: center;
+}
+
+p{
+		line-height: 19px;
+}
+
+span{
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+.photo{
+	margin: 10px 10px 0px 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	float: left;
+}
+
+ul{
+	margin-left: 250px;
+}
+
+.caption{
+	margin-top: 0px;
+	font-style: italic;
+}
+

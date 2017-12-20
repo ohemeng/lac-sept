@@ -1,0 +1,16 @@
+body{
+	background-color: skyblue;
+}
+
+div{
+	margin-bottom: 2%;
+}
+
+button{
+	font-size: 32px;
+}
+
+#receiptTotal{
+	background-color: #dddddd;
+	font-size: 1.5em;
+}

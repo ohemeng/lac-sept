@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Favorites</title>
+	<style>
+		#carousel, #carousel2, #carousel3{
+			width: 720px;
+			height: 400px;
+			overflow: hidden;
+			margin: 0 auto 100px;
+			border: 20px groove navy;
+		}
+		.slides, .slides2, .slides3{
+			display: block;
+			width: 4000px;
+			height: 400px;
+			margin: 0;
+			padding: 0;
+		}
+		.slide, .slide2, .slide3{
+			float: left;
+			width: 720px;
+			height: 400px;
+		}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+			background-color: aquamarine;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+			font-size: 70%;
+			padding: 15px;
+			display: inline-block;
+		}
+		.nav {
+			background-color: black;
+		}
+
+		a:hover{
+			background-color: aquamarine;
+		}
+		h1{
+			text-align: center;
+			font-family: zapfino;
+			font-size: 1.5em;
+		}
+</style>
+</head>
+<body>
+<div class="nav">
+			<a href="home.html">Home</a>
+	    	<a href="about-me.html">About Me</a>
+	    	<a href="my-favorites.html">My Favorites</a>
+	    	<a href="my-gallery.html">My Gallery</a>
+	    	<a href="my-videos.html">My Videos</a>
+</div>
+
+<h1>My Favorite Places</h1>
+<div id="carousel">
+	<div class="slides">
+		<img src="1.jpg" class="slide">
+		<img src="2.jpg" class="slide">
+		<img src="3.jpg" class="slide">
+		<img src="4.jpg" class="slide">
+		<img src="1.jpg" class="slide">
+	</div>
+</div>
+
+<h1>My Favorite Sports</h1>
+<div id="carousel2">
+	<div class="slides2">
+		<img src="5.jpg" class="slide2">
+		<img src="6.jpg" class="slide2">
+		<img src="7.jpg" class="slide2">
+		<img src="8.jpg" class="slide2">
+		<img src="5.jpg" class="slide2">
+	</div>
+</div>
+
+<h1>My Favorite Cars</h1>
+<div id="carousel3">
+	<div class="slides3">
+		<img src="9.jpg" class="slide3">
+		<img src="10.jpg" class="slide3">
+		<img src="11.jpg" class="slide3">
+		<img src="12.jpg" class="slide3">
+		<img src="9.jpg" class="slide3">
+	</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+var currentSlide = 1;
+var startCarousel = setInterval(startSliding, 4000);
+function startSliding(){
+	$("#carousel .slides").animate({'margin-left': '-=720px'}, 
+		1000, function(){
+		currentSlide++;
+			if(currentSlide == $(".slide").length){
+				currentSlide = 1;
+				$(".slides").css('margin-left', 0);
+			}
+	});
+}
+</script>
+<script type="text/javascript">
+var currentSlide2 = 1;
+var startCarousel2 = setInterval(startSliding, 4000);
+function startSliding(){
+	$("#carousel2 .slides2").animate({'margin-left': '-=720px'}, 
+		1000, function(){
+		currentSlide2++;
+			if(currentSlide2 == $(".slide2").length){
+				currentSlide2 = 1;
+				$(".slides2").css('margin-left', 0);
+			}
+	});
+}
+</script>
+<script type="text/javascript">
+var currentSlide3 = 1;
+var startCarousel3 = setInterval(startSliding, 4000);
+function startSliding(){
+	$("#carousel3 .slides3").animate({'margin-left': '-=720px'}, 
+		1000, function(){
+		currentSlide3++;
+			if(currentSlide3 == $(".slide3").length){
+				currentSlide3 = 1;
+				$(".slides3").css('margin-left', 0);
+			}
+	});
+}
+</script>
+</body>
+</html>
